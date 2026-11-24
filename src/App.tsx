@@ -40,9 +40,10 @@ import HajjCountdown from './components/HajjCountdown.tsx';
 import PilgrimExperiences from './components/PilgrimExperiences.tsx';
 import HajjRitualMap from './components/HajjRitualMap.tsx';
 import HajjGuideModal from './components/HajjGuideModal.tsx';
-import Haramain3DShowcase from './components/Haramain3DShowcase.tsx';
 import ContactQRCard from './components/ContactQRCard.tsx';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+
+const Haramain3DShowcase = React.lazy(() => import('./components/Haramain3DShowcase.tsx'));
 
 // Currency configuration for Overseas Pilgrims (MORA Remittance Reference Rates)
 export const ESTIMATOR_CURRENCIES = {
@@ -775,7 +776,15 @@ export default function App() {
       </section>
 
       {/* Photorealistic Real-Time 3D Haramain & Rotana Jabal Omar Showcase */}
-      <Haramain3DShowcase />
+      <React.Suspense
+        fallback={
+          <section id="3d-tour" className="py-20 bg-[#021d11] text-center text-emerald-100/80">
+            <div className="mx-auto max-w-7xl px-4">Loading Interactive 3D Haramain Tour…</div>
+          </section>
+        }
+      >
+        <Haramain3DShowcase />
+      </React.Suspense>
 
       {/* Accommodation Highlights Section */}
       <section id="accommodations" className="py-20 sm:py-28 bg-white border-b border-slate-200/80 scroll-mt-24 sm:scroll-mt-28">

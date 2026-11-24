@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { jsPDF } from 'jspdf';
 import {
   X,
   Download,
@@ -27,9 +26,10 @@ export const HajjGuideModal: React.FC<HajjGuideModalProps> = ({ isOpen, onClose 
 
   if (!isOpen) return null;
 
-  const generatePDF = () => {
+  const generatePDF = async () => {
     setIsGenerating(true);
     try {
+      const { jsPDF } = await import('jspdf');
       const doc = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
