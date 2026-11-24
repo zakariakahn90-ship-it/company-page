@@ -33,6 +33,7 @@ import {
   HelpCircle,
   Syringe
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { HAJJ_PACKAGES, HajjPackage } from './data/packages.ts';
 import AlIsrajLogo from './components/AlIsrajLogo.tsx';
 import PrayerTimesWidget from './components/PrayerTimesWidget.tsx';
@@ -2051,6 +2052,9 @@ export default function App() {
 
       {/* Hajj 2027 Essential Guide Modal */}
       <HajjGuideModal isOpen={guideModalOpen} onClose={() => setGuideModalOpen(false)} />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
