@@ -1,0 +1,8 @@
+{
+  "name": "Al-Israj International Travels",
+  "description": "Official Hajj 2027 Registration Open with Al-Israj International Travels Pvt. Ltd. MORA Approved Packages: 14 Days, 18 Days, and 27 Days with Rotana Jabal Omar Makkah (150m), Markazia Madinah, and Makteb-C.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
