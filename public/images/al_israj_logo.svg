@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 40 720 920" width="100%" height="100%">
+  <defs>
+    <!-- Green Crescent Gradient (Deep Emerald to Vibrant Lime Green) -->
+    <linearGradient id="crescentGradient" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#02632b" />
+      <stop offset="35%" stop-color="#058638" />
+      <stop offset="70%" stop-color="#32b342" />
+      <stop offset="100%" stop-color="#80c627" />
+    </linearGradient>
+
+    <!-- Arabic Calligraphy Blue Gradient (Royal Navy to Azure Cobalt) -->
+    <linearGradient id="calligraphyBlueGrad" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#053782" />
+      <stop offset="40%" stop-color="#084ba6" />
+      <stop offset="75%" stop-color="#0d61c9" />
+      <stop offset="100%" stop-color="#043c8d" />
+    </linearGradient>
+
+    <!-- Aviation Runway Stripe Blue Gradient -->
+    <linearGradient id="runwayStripeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#032d6c" />
+      <stop offset="50%" stop-color="#074ea8" />
+      <stop offset="100%" stop-color="#0d65cf" />
+    </linearGradient>
+
+    <!-- Gold Aircraft Gradient -->
+    <linearGradient id="airplaneGoldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8830e" />
+      <stop offset="50%" stop-color="#d49b16" />
+      <stop offset="100%" stop-color="#e6ad22" />
+    </linearGradient>
+
+    <filter id="softEmblemShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- ======================================================== -->
+  <!-- 1. GREEN CRESCENT (Outer Boundary on Left & Bottom)      -->
+  <!-- ======================================================== -->
+  <path
+    d="M 432 188
+       C 352 198, 276 256, 234 336
+       C 192 414, 190 514, 222 602
+       C 254 686, 314 760, 396 814
+       C 476 866, 570 882, 664 850
+       C 714 832, 762 796, 792 742
+       C 810 710, 816 668, 814 624
+       C 804 664, 778 714, 736 754
+       C 674 812, 592 836, 510 832
+       C 428 826, 356 780, 302 720
+       C 248 650, 234 560, 250 468
+       C 266 386, 318 306, 386 244
+       C 406 226, 424 204, 432 188 Z"
+    fill="url(#crescentGradient)"
+  />
+
+  <!-- ======================================================== -->
+  <!-- 2. CENTRAL ARABIC CALLIGRAPHY ("الإسراج")                -->
+  <!-- ======================================================== -->
+
+  <!-- Central Tall Flame Spire Alif (Peaks at top: 508, 62) -->
+  <path
+    d="M 508 62
+       C 498 108, 480 168, 456 238
+       C 434 300, 412 368, 400 436
+       C 392 480, 392 522, 402 562
+       C 414 532, 428 488, 444 438
+       C 466 370, 492 296, 518 222
+       C 538 166, 552 118, 550 78
+       C 542 66, 526 58, 508 62 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Secondary Flame Hook (Top-Right finial peaking at 584, 196) -->
+  <path
+    d="M 584 196
+       C 572 232, 564 278, 562 328
+       C 560 376, 570 418, 590 458
+       C 604 430, 614 394, 616 352
+       C 618 306, 610 262, 596 224
+       C 592 212, 588 202, 584 196 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Upper Flame Body Bridging Left & Right (Between 380 and 560) -->
+  <path
+    d="M 456 238
+       C 432 304, 406 378, 388 456
+       C 374 516, 372 576, 384 632
+       C 396 592, 412 546, 434 496
+       C 458 438, 484 380, 506 324
+       C 488 292, 470 262, 456 238 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Left Calligraphic Seen Loop / Wing -->
+  <path
+    d="M 382 358
+       C 356 398, 332 448, 314 506
+       C 292 576, 286 648, 302 716
+       C 318 732, 338 734, 356 718
+       C 374 700, 384 668, 388 626
+       C 392 576, 388 522, 396 468
+       C 400 442, 408 416, 420 392
+       C 410 374, 396 362, 382 358 Z
+       M 346 548
+       C 356 518, 368 488, 378 464
+       C 382 486, 378 516, 370 546
+       C 362 576, 350 606, 340 624
+       C 334 602, 338 574, 346 548 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Nuqta (Calligraphic Diamond Accent Dot at bottom-left) -->
+  <polygon
+    points="356,664 374,682 356,700 338,682"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Right Calligraphic Swirl & Descender (Letter Raa / Jeem Tail) -->
+  <path
+    d="M 436 686
+       C 448 768, 484 846, 536 902
+       C 578 946, 630 962, 680 940
+       C 724 918, 756 870, 768 812
+       C 776 764, 764 712, 736 662
+       C 712 708, 678 748, 634 772
+       C 594 792, 550 788, 514 756
+       C 482 728, 460 686, 450 638
+       C 444 656, 438 672, 436 686 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- Lower Left Base Stroke Anchoring Under Runway -->
+  <path
+    d="M 276 742
+       C 264 758, 256 778, 252 800
+       C 270 796, 292 782, 314 760
+       C 332 742, 346 720, 354 696
+       L 316 718
+       C 300 728, 286 736, 276 742 Z"
+    fill="url(#calligraphyBlueGrad)"
+  />
+
+  <!-- ======================================================== -->
+  <!-- 3. AVIATION RUNWAY (Straight Sharp Diagonal Blue Stripe)  -->
+  <!-- ======================================================== -->
+  <polygon
+    points="216,974 256,974 734,316 734,372 250,974"
+    fill="url(#runwayStripeGrad)"
+  />
+  <polygon
+    points="216,974 256,974 734,316 698,316"
+    fill="url(#runwayStripeGrad)"
+  />
+
+  <!-- ======================================================== -->
+  <!-- 4. GOLD COMMERCIAL AIRPLANE (Soaring at Top-Right Tip)    -->
+  <!-- ======================================================== -->
+  <g transform="translate(766, 222) rotate(-38.5)">
+    <!-- Fuselage Body -->
+    <path
+      d="M 0 -54
+         C 7 -54, 12 -38, 12 18
+         C 12 36, 7 50, 0 50
+         C -7 50, -12 36, -12 18
+         C -12 -38, -7 -54, 0 -54 Z"
+      fill="url(#airplaneGoldGrad)"
+    />
+
+    <!-- Main Swept Wings -->
+    <polygon
+      points="0,-12 62,18 58,28 0,8 -58,28 -62,18"
+      fill="url(#airplaneGoldGrad)"
+    />
+
+    <!-- Rear Horizontal Stabilizers (Tail Wings) -->
+    <polygon
+      points="0,32 26,44 22,50 0,40 -22,50 -26,44"
+      fill="url(#airplaneGoldGrad)"
+    />
+
+    <!-- Vertical Tail Fin -->
+    <polygon
+      points="0,18 4,46 -4,46"
+      fill="#b8830e"
+    />
+  </g>
+</svg>
