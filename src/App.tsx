@@ -42,6 +42,7 @@ import HajjRitualMap from './components/HajjRitualMap.tsx';
 import HajjGuideModal from './components/HajjGuideModal.tsx';
 import Haramain3DShowcase from './components/Haramain3DShowcase.tsx';
 import ContactQRCard from './components/ContactQRCard.tsx';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Currency configuration for Overseas Pilgrims (MORA Remittance Reference Rates)
 export const ESTIMATOR_CURRENCIES = {
@@ -2051,6 +2052,9 @@ export default function App() {
 
       {/* Hajj 2027 Essential Guide Modal */}
       <HajjGuideModal isOpen={guideModalOpen} onClose={() => setGuideModalOpen(false)} />
+      
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
