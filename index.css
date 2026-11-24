@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-emerald-deep: #032b19;
+  --color-emerald-dark: #04361f;
+  --color-emerald-mid: #085530;
+  --color-emerald-light: #f0f7f3;
+
+  --color-gold: #c9a227;
+  --color-gold-light: #e6c964;
+  --color-gold-soft: #fcf9ee;
+  --color-gold-dark: #9a7913;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-cinzel: "Cinzel", Georgia, serif;
+  --font-arabic: "Amiri", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+/* Islamic Geometric Micro-Pattern */
+.islamic-pattern-dark {
+  background-color: #032b19;
+  background-image: radial-gradient(rgba(201, 162, 39, 0.15) 1px, transparent 1px),
+                    radial-gradient(rgba(201, 162, 39, 0.08) 1px, #032b19 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.islamic-pattern-light {
+  background-color: #fbfaf6;
+  background-image: radial-gradient(rgba(201, 162, 39, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(201, 162, 39, 0.18), transparent 55%),
+    linear-gradient(180deg, rgba(3, 43, 25, 0.94) 0%, rgba(2, 30, 17, 0.98) 100%),
+    radial-gradient(circle at 100% 100%, rgba(11, 122, 72, 0.3), transparent 50%);
+}
+
+.gold-rule {
+  background: linear-gradient(90deg, transparent, #c9a227, transparent);
+}
+
+.gold-rule-subtle {
+  background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.35), transparent);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #f4df8f 0%, #c9a227 50%, #9a7913 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge-shimmer {
+  background: linear-gradient(90deg, rgba(201,162,39,0.15) 0%, rgba(201,162,39,0.35) 50%, rgba(201,162,39,0.15) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite linear;
+}
+
+@keyframes panoramicPan {
+  0% {
+    transform: scale(1.15) translateX(0%);
+  }
+  50% {
+    transform: scale(1.15) translateX(-8%);
+  }
+  100% {
+    transform: scale(1.15) translateX(0%);
+  }
+}
+
+.animate-panoramic {
+  animation: panoramicPan 16s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Sticky Navigation Header Scroll Offset Clearance */
+html {
+  scroll-padding-top: 5.75rem;
+}
+
+section[id],
+div[id],
+article[id] {
+  scroll-margin-top: 5.75rem;
+}
